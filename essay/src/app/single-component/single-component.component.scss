@@ -1,0 +1,11 @@
+.input-style{
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.input-style:focus{
+  border-color: lightskyblue;
+}

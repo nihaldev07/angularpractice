@@ -1,0 +1,15 @@
+
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <div>
+      <app-single-component [title]="'Enter Your Prompt'" [subTitle]="'Be as specific as possible'"  (onValueChange)="handleGenerateClick1($event)"  />
+      <br/>
+      <app-single-component [title]="'Word Count'" [subTitle]="''" (onValueChange)="handleGenerateClick2($event)" />
+      <br/>
+      <app-single-component [title]="'Format'" [subTitle]="'ex. hello world'" (onValueChange)="handleGenerateClick3($event)" />
+      <br/>
+      <button style="width: 100%;" mat-raised-button color="primary" (click)="handleSubmit()" >Generate</button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile ><div><app-final-page [outputValue]="finalOutPut"/></div></mat-grid-tile>
+</mat-grid-list>
